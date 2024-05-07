@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Ký Du Lịch</title> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="img/kham-pha-10-dia-diem-du-lich-hap-dan-tai-an-giang-thu-hut-du-khach-202106281518155043.jpg" alt="" class="img-100">
+        </div>
+    </header>
+    <div class="gallery">
+        
+        <img src="img/6-1.jpg" alt="Du lịch 5">
+        <img src="img/6hieu.jpg" alt="Du lịch 6">
+        <img src="img/canh-dong-ta-pa.jpg" alt="Du lịch 7">
+        <img src="img/chua-van-linh13.jpg" alt="Du lịch 8">
+        <img src="img/dia-diem-du-lich-an-giang-noi-tieng-1-1125x750.jpg" alt="Du lịch 9">
+        <img src="img/khu-that-son.jpg" alt="Du lịch 10">
+        <img src="img/kinh-nghiem-du-lich-an-giang-7.jpg" alt="Du lịch 11">
+        <img src="img/x5spleebjvtgw0ptfgit.jpg" alt="Du lịch 12">
+    </div>
+    <form action="process.php" method="post">
+        <h2 style="text-align: center;">Đăng Ký</h2>
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" name="phone">
+
+        <label for="birthday">Ngày sinh:</label>
+        <input type="date" id="birthday" name="birthday">
+
+        <label for="gender">Giới tính:</label>
+        <select id="gender" name="gender">
+            <option value="male">Nam</option>
+            <option value="female">Nữ</option>
+        </select>
+
+        <label for="address">Địa chỉ:</label>
+        <select id="address" name="address">
+            <option value="An Giang">An Giang</option>
+            <option value="Cần Thơ">Cần Thơ</option>
+            <option value="Kiên Giang">Kiên Giang</option>
+            <option value="Đồng Tháp">Đồng Tháp</option>
+        </select>
+
+        <label for="note">Ghi chú:</label>
+        <textarea id="note" name="note"></textarea>
+
+        <input type="submit" value="Đăng Ký">
+    </form>
+</body>
+</html>
